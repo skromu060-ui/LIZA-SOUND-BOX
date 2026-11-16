@@ -1,1 +1,18 @@
+name: Build APK
 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Start Build
+        run: echo "LIZA SOUND BOX Build Started"
